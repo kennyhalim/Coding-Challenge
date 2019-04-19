@@ -11,11 +11,12 @@
     <title>Coding Challenge</title>
   </head>
   <body>
-    <div class="container">
-      <div class="intro">
+    <div class="container container-margin">
+
         <div class="jumbotron">
-          <h1>Furniture Store</h1>
+          <h1 id="header">Furniture Store</h1>
         </div>
+      <div class="intro">
         <h4>Welcome to Blabla Furniture Store!</h4>
         <p>We have the best quality of furnitures with great price!</p>
         <br><br>
@@ -31,11 +32,12 @@
       <input id="search" type="text">
       <button type="submit" id="searchBtn" class="btn btn-primary">Search</button>
       <p>Filter by:
-        <select>
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="mercedes">Mercedes</option>
-          <option value="audi">Audi</option>
+        <select id="filter">
+          <option value="none" selected>None</option>
+          <option value="100">< $100</option>
+          <option value="250">< $250</option>
+          <option value="500">< $500</option>
+          <option value="1000">< $1000</option>
         </select>
       </p>
 
