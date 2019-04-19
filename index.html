@@ -8,10 +8,39 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/scripts.js"></script>
 
-    <title>Kenny Halim</title>
+    <title>Coding Challenge</title>
   </head>
   <body>
-    <button id="furniture" class="btn btn-primary">Search</button>
-    <ul id="result"></ul>
+    <div class="container">
+      <div class="intro">
+        <div class="jumbotron">
+          <h1>Furniture Store</h1>
+        </div>
+        <h4>Welcome to Blabla Furniture Store!</h4>
+        <p>We have the best quality of furnitures with great price!</p>
+        <br><br>
+        <p>Search through this button to see lists of furnitures!</p>
+        <button id="furniture" class="btn btn-primary">Search</button>
+        <hr>
+      </div>
+    </div>
+    
+
+    <div class="result">
+      <label for="search">Search for: </label>
+      <input id="search" type="text">
+      <button type="submit" id="searchBtn" class="btn btn-primary">Search</button>
+      <p>Filter by:
+        <select>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+      </p>
+
+      <div id="output" class="row"></div>
+      
+    </div>
   </body>
 </html>
